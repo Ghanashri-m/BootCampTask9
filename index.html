@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Dash of Delight</title>
+    <style>
+        .border {
+            background: transparent !important;
+            border: none !important;
+            width: 200px;
+        }
+    </style>
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body class="bodyBackground">
+    <div class="container-fluid" style="display: flex; align-items:center; flex-direction:column;">
+        <i class="fa fa-coffee" style="color:#E1AD01; font-size: 60px" ></i>
+        <h1 class="display-4" id="app-name">
+            Dash of Delight
+        </h1>
+        <img src="./border.webp" class="border">
+        <div class="quote">
+            <i class="fa fa-quote-left" style="color:#E1AD01; font-size: 40px" ></i>
+            <span class="quotePadding">Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious</span>
+            <i class="fa fa-quote-right" style="color:#E1AD01; font-size: 40px" ></i>
+        </div>
+        <div class="example">
+            <input type="text" id="searchBox" placeholder="Search meals by first letter ..." name="search">
+            <button onclick="getTableData()"><i class="fa fa-search"></i></button>
+        </div>
+        <div>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="row customTable">
+            <div class="col-12 scroll">
+              <table class="table table-bordered header-fixed">
+                <thead class="head">
+                  <tr>
+                    <th scope="col" class="hide">Meal Type</th>
+                    <th scope="col" class="hide">Meal Area</th>
+                    <th scope="col">Meal Name</th>
+                    <th scope="col">See Recipe</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div id='recipe' style="margin-top: 20px;" class="recipe">
+          </div>
+          <div class="footer">
+            <p>Copyright © since 2021 by Ghanashri M</p>
+          </div>
+    </div>
+</body>
+</html>
